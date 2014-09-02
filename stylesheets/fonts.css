@@ -1,0 +1,10 @@
+@font-face{
+    font-family: 'FrutigerLTStd-BoldCn';
+    src: url('../assets/fonts/FrutigerLTStd-BoldCn.otf') format('opentype');
+    font-weight: bold;
+}
+@font-face{
+    font-family: 'Frutiger-Black';
+    src: url('../assets/fonts/Frutiger%20LT%2075%20Black.ttf') format('truetype');
+    font-weight: bold;
+}

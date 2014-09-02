@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheets/reset.css"/>
+    <link rel="stylesheet" href="stylesheets/style.css"/>
+    <link rel="stylesheet" href="stylesheets/fonts.css"/>
+    <title>Final-task</title>
+</head>
+<body>
+<nav>
+    <div class="close-menu"></div>
+    <ul class="open-menu" data-bind="foreach: slides">
+        <li data-bind="text: $data,
+                   css: { selected: $data == $root.chosenSlideId() },
+                   click: $root.goToSlide">
+        </li>
+    </ul>
+
+</nav>
+
+<section>
+    <article class="graphics" data-bind="css:{ visible: $root.chosenSlideId()=='Graphics'}">
+        <h1>Xarelto<sup>&reg;</sup>: An Effective Treatment Option<br/>in Your VTE Patients with Cancer<sup>a,8</sup></h1>
+        <div class="content-wrapper">
+            <div class="graph-container">
+                <ul class="vAxis">
+                    <li>8</li>
+                    <li>7</li>
+                    <li>6</li>
+                    <li>5</li>
+                    <li>4</li>
+                    <li>3</li>
+                    <li>2</li>
+                    <li>1</li>
+                    <li>0</li>
+                </ul>
+                <div class="graph">
+                </div>
+                <ul class="gAxis">
+                    <li>0</li>
+                </ul>
+            </div>
+        </div>
+    </article>
+    <article class="calculator" data-bind="css:{ visible: $root.chosenSlideId()=='Calculator'}">
+        <!--dsgfdgdhfh-->
+    </article>
+    <article class="competitors" data-bind="css:{ visible: $root.chosenSlideId()=='Competitors'}">
+        <!--dfzgdgsg-->
+    </article>
+</section>
+
+<script src="scripts/knockout-3.1.0.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>
