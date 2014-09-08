@@ -8,22 +8,27 @@
     <title>Final-task</title>
 </head>
 <body>
-<nav>
-    <div class="close-menu"></div>
-    <ul class="open-menu" data-bind="foreach: slides">
-        <li data-bind="text: $data,
-                   css: { selected: $data == $root.chosenSlideId() },
-                   click: $root.goToSlide">
-        </li>
-    </ul>
 
-</nav>
 
 <section>
+    <nav>
+        <div class="close-menu"></div>
+        <ul class="open-menu" data-bind="foreach: slides">
+            <li data-bind="text: $data,
+                   css: { selected: $data == $root.chosenSlideId() },
+                   click: $root.goToSlide">
+            </li>
+        </ul>
+
+    </nav>
     <article class="graphics" data-bind="css:{ visible: $root.chosenSlideId()=='Graphics'}">
         <h1>Xarelto<sup>&reg;</sup>: An Effective Treatment Option<br/>in Your VTE Patients with Cancer<sup>a,8</sup></h1>
         <div class="content-wrapper">
+
             <div class="graph-container">
+                <div class="v-scale-label">
+                    <p>% patients<sup>b</sup></p>
+                </div>
                 <ul class="vAxis">
                     <li>8</li>
                     <li>7</li>
@@ -36,18 +41,30 @@
                     <li>0</li>
                 </ul>
                 <div class="graph">
+                    <div class="bars-container">
+                        <div class="bar">
+                            <p>enoxaparin/<br>vka</p>
+                        </div>
+                        <div class="bar">
+                            <p>xarelto</p>
+                        </div>
+                    </div>
+
                 </div>
                 <ul class="gAxis">
-                    <li>0</li>
+                    <li></li>
                 </ul>
+                <div class="g-scale-label">
+                    <p>Cancer</p>
+                </div>
             </div>
         </div>
     </article>
     <article class="calculator" data-bind="css:{ visible: $root.chosenSlideId()=='Calculator'}">
-        <!--dsgfdgdhfh-->
+
     </article>
     <article class="competitors" data-bind="css:{ visible: $root.chosenSlideId()=='Competitors'}">
-        <!--dfzgdgsg-->
+
     </article>
 </section>
 

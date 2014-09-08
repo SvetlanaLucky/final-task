@@ -8,3 +8,8 @@
     src: url('../assets/fonts/Frutiger%20LT%2075%20Black.ttf') format('truetype');
     font-weight: bold;
 }
+@font-face{
+    font-family: 'Frutiger';
+    src: url('../assets/fonts/frutiger_lt_55_roman.otf') format('opentype');
+    font-weight: normal;
+}
