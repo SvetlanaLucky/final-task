@@ -9,18 +9,18 @@
 </head>
 <body>
 
-
-<section>
-    <nav>
-        <div class="close-menu"></div>
-        <ul class="open-menu" data-bind="foreach: slides">
-            <li data-bind="text: $data,
+<nav>
+    <div class="close-menu"></div>
+    <ul class="open-menu" data-bind="foreach: slides">
+        <li data-bind="text: $data,
                    css: { selected: $data == $root.chosenSlideId() },
                    click: $root.goToSlide">
-            </li>
-        </ul>
+        </li>
+    </ul>
 
-    </nav>
+</nav>
+<section>
+
     <article class="graphics" data-bind="css:{ visible: $root.chosenSlideId()=='Graphics'}">
         <h1>Xarelto<sup>&reg;</sup>: An Effective Treatment Option<br/>in Your VTE Patients with Cancer<sup>a,8</sup></h1>
         <div class="content-wrapper">
